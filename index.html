@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project GreenEdge (绿刃计划) - 一个完全开源、透明的全球节能减碳协作社区">
+  <title>Project GreenEdge (绿刃计划) - 用代码，为地球降温</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== 导航栏 ==================== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect width="28" height="28" rx="6" fill="#2e7d32"/>
+          <path d="M8 22L14 6L20 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="10" y1="17" x2="18" y2="17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        GreenEdge
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how">我们的方式</a></li>
+        <li><a href="#contributors">贡献者</a></li>
+        <li><a href="#transparency">透明承诺</a></li>
+        <li><a href="challenges/01-building-energy-prediction.html">当前挑战</a></li>
+        <li><a href="https://github.com/Yuye0325/project-greenedge" target="_blank">GitHub →</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    </div>
+  </nav>
+
+  <!-- ==================== 首屏 Hero ==================== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        全球开源 · 零成本启动 · 财务透明
+      </div>
+      <h1 class="hero-title">用代码，为地球降温。</h1>
+      <p class="hero-subtitle">一个完全开源、透明的全球节能减碳协作社区。</p>
+      <p class="hero-desc">
+        汇集全球开发者的智慧，用一行代码、一个模型，<br>共同推动工业与生活的切实减碳。
+      </p>
+      <div class="hero-buttons">
+        <a href="https://github.com/Yuye0325/project-greenedge/edit/main/CONTRIBUTORS.md" target="_blank" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/></svg>
+          我想贡献代码/模型
+        </a>
+        <a href="finance/ledger.md" class="btn btn-outline">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h3a1 1 0 100-2H9z"/></svg>
+          我愿提供其他支持
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" id="statContributors">--</span>
+          <span class="stat-label">贡献者</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="statCommits">--</span>
+          <span class="stat-label">提交记录</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">减碳潜力</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 第二屏：我们的方式 ==================== -->
+  <section class="how" id="how">
+    <h2 class="section-title">我们的方式</h2>
+    <p class="section-subtitle">一个开放、透明、可持续的协作流程</p>
+    <div class="how-grid">
+      <div class="how-card">
+        <div class="how-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" stroke="#2e7d32" stroke-width="2" fill="#e8f5e9"/>
+            <text x="24" y="30" text-anchor="middle" font-size="22">🎯</text>
+          </svg>
+        </div>
+        <h3>公开挑战</h3>
+        <p>由社区提出或企业赞助的真实减碳问题，拆解为可量化的 AI/数据挑战，公开发布。</p>
+      </div>
+      <div class="how-card">
+        <div class="how-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" stroke="#2e7d32" stroke-width="2" fill="#e8f5e9"/>
+            <text x="24" y="30" text-anchor="middle" font-size="22">🌍</text>
+          </svg>
+        </div>
+        <h3>全球协作</h3>
+        <p>全球开发者自由组队、提交方案。所有代码开源，所有讨论公开可追溯。</p>
+      </div>
+      <div class="how-card">
+        <div class="how-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" stroke="#2e7d32" stroke-width="2" fill="#e8f5e9"/>
+            <text x="24" y="30" text-anchor="middle" font-size="22">🌿</text>
+          </svg>
+        </div>
+        <h3>开源成果</h3>
+        <p>优秀方案永久开源，供全球企业、政府、机构免费使用，持续产生减碳影响力。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 第三屏：贡献者墙 ==================== -->
+  <section class="contributors" id="contributors">
+    <h2 class="section-title">近期贡献者</h2>
+    <p class="section-subtitle">数据由 GitHub API 实时获取，每一行代码都值得被铭记</p>
+
+    <!-- 动态加载区域 -->
+    <div class="contributors-live" id="contributorsLive">
+      <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+        <p>正在加载贡献者数据...</p>
+      </div>
+      <ul class="contributors-list" id="contributorsList" style="display:none;"></ul>
+      <div class="contributors-error" id="contributorsError" style="display:none;">
+        <p>⚠️ 无法加载实时贡献数据，请稍后刷新页面。</p>
+        <a href="CONTRIBUTORS.md">查看完整贡献者墙 →</a>
+      </div>
+    </div>
+
+    <a href="CONTRIBUTORS.md" class="btn btn-outline" style="margin-top:2rem;">查看完整贡献者墙 →</a>
+  </section>
+
+  <!-- ==================== 第四屏：透明承诺 ==================== -->
+  <section class="transparency" id="transparency">
+    <h2 class="section-title">透明是我们的基石</h2>
+    <div class="transparency-grid">
+      <div class="trans-card">
+        <h3>📋 财务 48 小时公示</h3>
+        <p>所有收入与支出将在发生后 48 小时内，在公开账本中完整披露。每一分钱的去向清晰可查。</p>
+        <a href="finance/ledger.md">查看财务账本 →</a>
+      </div>
+      <div class="trans-card">
+        <h3>📜 项目透明宪章</h3>
+        <p>公益非个人所有、财务完全透明、贡献公开可查、协作友善尊重——四大原则永久生效。</p>
+        <a href="constitution.md">阅读完整宪章 →</a>
+      </div>
+      <div class="trans-card">
+        <h3>🔓 代码完全开源</h3>
+        <p>所有代码、模型、文档均在仓库公开可查。MIT 协议授权，自由使用、修改和分发。</p>
+        <a href="https://github.com/Yuye0325/project-greenedge" target="_blank">访问 GitHub 仓库 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 底部 ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="CONTRIBUTORS.md">贡献者墙</a>
+        <a href="finance/ledger.md">财务公示</a>
+        <a href="constitution.md">项目宪章</a>
+        <a href="challenges/01-building-energy-prediction.html">当前挑战</a>
+        <a href="https://github.com/Yuye0325/project-greenedge" target="_blank">GitHub 仓库</a>
+      </div>
+      <p class="footer-copy">Project GreenEdge (绿刃计划) &copy; 2026 · 开源公益 · MIT License</p>
+      <p class="footer-motto">用代码，为地球降温。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
